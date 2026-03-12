@@ -1,2 +1,19 @@
-# RA4M1-HAL
-A high-performance Rust Hardware Abstraction Layer for the Renesas RA4M1 on Arduino Uno R4 WiFi providing type-safe and idiomatic APIs for peripheral control. It ensures zero-cost abstractions by building on the PAC to prevent hardware conflicts while streamlining embedded firmware development for smart security systems and IoT sensors
+# Arduino Uno R4 WiFi Rust HAL (RA4M1)
+
+This repository contains a Hardware Abstraction Layer (HAL) for the **Renesas RA4M1** microcontroller, specifically tailored for the **Arduino Uno R4 WiFi**. It provides a type-safe, memory-secure, and efficient way to develop embedded firmware using the Rust programming language.
+
+## 🛠 Features
+* **Zero-Cost Abstractions:** Built directly on top of the PAC (Peripheral Access Crate).
+* **Type-Safe GPIO:** Prevents hardware resource conflicts at compile time.
+* **Pin Mapping:** Pre-configured for Arduino Uno R4 WiFi (e.g., Onboard LED on `P102`).
+* **Optimized for Security:** Ideal for projects requiring high reliability like smart door locks.
+
+## 🚀 Getting Started
+
+### Prerequisites
+1. **Rust Toolchain:** Install `thumbv4t-none-eabi` or the relevant target for RA4M1.
+2. **Cargo-binutils:** For generating binary files.
+   ```powershell
+   cargo install cargo-binutils
+   rustup component add llvm-tools-preview
+3. **Arduino CLI:** Required for uploading the firmware.
