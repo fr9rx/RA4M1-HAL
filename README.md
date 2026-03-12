@@ -6,7 +6,6 @@ This repository contains a Hardware Abstraction Layer (HAL) for the **Renesas RA
 * **Zero-Cost Abstractions:** Built directly on top of the PAC (Peripheral Access Crate).
 * **Type-Safe GPIO:** Prevents hardware resource conflicts at compile time.
 * **Pin Mapping:** Pre-configured for Arduino Uno R4 WiFi (e.g., Onboard LED on `P102`).
-* **Optimized for Security:** Ideal for projects requiring high reliability like smart door locks.
 
 ## 🚀 Getting Started
 
