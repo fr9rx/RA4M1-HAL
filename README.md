@@ -19,3 +19,10 @@ This repository contains a Hardware Abstraction Layer (HAL) for the **Renesas RA
 3. **Arduino CLI:** Required for uploading the firmware.
 ```powershell
    .\arduino-cli.exe core install arduino:renesas_uno
+
+## 📦 Building and Flashing
+To build the project and flash it to your board, follow these steps:
+1. **Compile to ELF and Convert to BIN:**
+```powershell
+   cargo build --release
+   cargo objcopy --release -- -O binary uno_r4_wifi.bin
