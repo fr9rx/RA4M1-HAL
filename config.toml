@@ -1,0 +1,7 @@
+[target.thumbv7em-none-eabihf]
+rustflags = [
+  "-C", "link-arg=-Tlink.x", # link.x هو ملف داخلي بدمج memory.x و device.x
+]
+
+[build]
+target = "thumbv7em-none-eabihf"
