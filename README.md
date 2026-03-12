@@ -17,3 +17,5 @@ This repository contains a Hardware Abstraction Layer (HAL) for the **Renesas RA
    cargo install cargo-binutils
    rustup component add llvm-tools-preview
 3. **Arduino CLI:** Required for uploading the firmware.
+```powershell
+   .\arduino-cli.exe core install arduino:renesas_uno
