@@ -30,12 +30,11 @@ Put your board in Bootloader Mode (Double-tap the Reset button) and run:
    ```powershell
    .\arduino-cli.exe upload -p COM6 --fqbn arduino:renesas_uno:unor4wifi --input-file uno_r4_wifi.bin
 Note: Change COM6 to your actual port found via:
-      ```powershell
       .\arduino-cli.exe board list
 
 ## 📂 Project Structure
-.**src/main.rs:** Core logic and pin initializations.
-.**memory.x:** Memory layout for the RA4M1 (Flash/RAM origins).
-.**Cargo.toml:** Project dependencies and metadata.
+1. **src/main.rs:** Core logic and pin initializations.
+2. **memory.x:** Memory layout for the RA4M1 (Flash/RAM origins).
+3. **Cargo.toml:** Project dependencies and metadata.
 ## 📝 License
 This project is licensed under the MIT License.
