@@ -26,3 +26,10 @@ To build the project and flash it to your board, follow these steps:
    ```powershell
    cargo build --release
    cargo objcopy --release -- -O binary uno_r4_wifi.bin
+2. **Upload to Board:**
+Put your board in Bootloader Mode (Double-tap the Reset button) and run:
+   ```powershell
+   .\arduino-cli.exe upload -p COM6 --fqbn arduino:renesas_uno:unor4wifi --input-file uno_r4_wifi.bin
+Note: Change COM6 to your actual port found via:
+   ```powershell
+   .\arduino-cli.exe board list
