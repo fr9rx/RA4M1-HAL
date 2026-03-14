@@ -1,16 +1,16 @@
-# Arduino Uno R4 WiFi Rust HAL (RA4M1)
+# Seeed Studio XIAO MG24 Sense/Normal Rust HAL (ERF32MG24)
 
-This repository contains a Hardware Abstraction Layer (HAL) for the **Renesas RA4M1** microcontroller, specifically tailored for the **Arduino Uno R4 WiFi**. It provides a type-safe, memory-secure, and efficient way to develop embedded firmware using the Rust programming language.
+This repository contains a Hardware Abstraction Layer (HAL) for the **ERF32MG24** microcontroller, specifically tailored for the **Seeed Studio XIAO MG24 Sense**. It provides a type-safe, memory-secure, and efficient way to develop embedded firmware using the Rust programming language.
 
 ## 🛠 Features
 * **Zero-Cost Abstractions:** Built directly on top of the PAC (Peripheral Access Crate).
 * **Type-Safe GPIO:** Prevents hardware resource conflicts at compile time.
-* **Pin Mapping:** Pre-configured for Arduino Uno R4 WiFi (e.g., Onboard LED on `P102`).
+* **Pin Mapping:** Pre-configured for Seed Studio XIAO MG24 Sense (e.g., Onboard LED).
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-1. **Rust Toolchain:** Install `thumbv4t-none-eabi` or the relevant target for RA4M1.
+1. **Rust Toolchain:** Install `thumbv4t-none-eabi` or the relevant target for ERF32MG24.
 2. **Cargo-binutils:** For generating binary files.
    ```powershell
    cargo install cargo-binutils
